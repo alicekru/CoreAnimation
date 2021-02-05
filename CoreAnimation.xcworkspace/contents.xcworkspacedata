@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:UseScrollView/UseScrollView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RedCircle/RedCircle.xcodeproj">
+   </FileRef>
+</Workspace>

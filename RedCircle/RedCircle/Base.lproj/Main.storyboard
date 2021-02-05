@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RedCircle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccy-dH-ZEb">
+                                <rect key="frame" x="225" y="560" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dcD-yM-i1q"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upB-nc-xAd">
+                                <rect key="frame" x="199.5" y="440.5" width="15" height="15"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="2EW-Lv-VWy"/>
+                                    <constraint firstAttribute="width" constant="15" id="7o1-4l-Cdv"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDi-sN-jgo">
+                                <rect key="frame" x="162" y="560" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DV1-WB-gFV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ccy-dH-ZEb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="516" id="3BX-s5-AiB"/>
+                            <constraint firstItem="ccy-dH-ZEb" firstAttribute="baseline" secondItem="FDi-sN-jgo" secondAttribute="baseline" id="NJz-uO-3u6"/>
+                            <constraint firstItem="ccy-dH-ZEb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FDi-sN-jgo" secondAttribute="trailing" constant="8" symbolic="YES" id="NgV-3Q-z37"/>
+                            <constraint firstItem="upB-nc-xAd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Oq8-Vw-ZVn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ccy-dH-ZEb" secondAttribute="trailing" constant="157" id="iDO-BC-BAg"/>
+                            <constraint firstItem="FDi-sN-jgo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="oHh-ka-OlS"/>
+                            <constraint firstItem="upB-nc-xAd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vdW-y8-Ejx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dotView" destination="upB-nc-xAd" id="LRO-vh-DZ7"/>
+                        <outlet property="startButton" destination="FDi-sN-jgo" id="MxV-7c-wwx"/>
+                        <outlet property="stopButton" destination="ccy-dH-ZEb" id="XQW-KP-hhg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
